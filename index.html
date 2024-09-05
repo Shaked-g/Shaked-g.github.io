@@ -1,87 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Shaked Gofin - Software Developer</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shaked Gofin - AI and Software Developer</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Mulish&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Preload images -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.jpg">
 </head>
+
 <body>
-    <header>
-        <h1>Shaked Gofin</h1>
-        <p>Software Developer | AI and Data Science Enthusiast</p>
-        <a href="mailto:sgofin@gmail.com">Contact Me</a> |
-        <a href="https://linkedin.com/in/shaked-gofin">LinkedIn</a> |
-        <a href="https://github.com/Shaked-g">GitHub</a>
-    </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            I am a software developer with experience in AI, machine learning, and full stack development. With a strong background in computer science and a passion for solving complex technical problems, I have worked on a variety of projects in the tech space, ranging from building AI chatbots to optimizing cloud infrastructure.
-        </p>
-    </section>
+  <!-- #HEADER -->
+  <header class="header" data-header>
+    <div class="container">
+      <a href="#" class="logo">Shaked Gofin</a>
 
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="job">
-            <h3>Google Startup Competition for the Israeli Ministry of Health</h3>
-            <p>Mar 2024 – Jun 2024</p>
-            <ul>
-                <li>Designed and developed an AI chatbot using LangChain, TypeScript, Node.js, and Angular</li>
-                <li>Deployed project with Docker to Google Cloud Run</li>
-                <li>Implemented RAG architecture with Google Vertex AI Vector Search</li>
-            </ul>
-        </div>
-
-        <div class="job">
-            <h3>Machine Learning Developer, Selectika</h3>
-            <p>Aug 2022 – May 2023</p>
-            <ul>
-                <li>Integrated Google Vision API and optimized AWS EC2 server usage</li>
-                <li>Reorganized database structure based on ML insights</li>
-            </ul>
-        </div>
-
-        <div class="job">
-            <h3>Full Stack Developer, Selectika</h3>
-            <p>Oct 2021 – Aug 2022</p>
-            <ul>
-                <li>Developed REST API using Express.js, Node.js, and MongoDB</li>
-                <li>Led end-to-end feature development and deployment on AWS EC2 and S3 CloudFront</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="education">
-        <h2>Education</h2>
-        <p>
-            <strong>Ariel University, Israel</strong> - Bachelor of Science in Computer Science (Oct 2019 – Mar 2024)
-        </p>
-        <p>Track: Data Science and Artificial Intelligence</p>
-    </section>
-
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Languages: TypeScript, JavaScript, Python, Java, C, C++</li>
-            <li>Frameworks: Angular, Node.js, Express.js</li>
-            <li>Cloud: AWS (S3, EC2, CloudFront), Google Cloud (GCP, Firebase, Cloud Vision)</li>
-            <li>Machine Learning: TensorFlow, OpenCV, Scikit-learn</li>
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+          <li><a href="#home" class="navbar-link" data-nav-link>Home</a></li>
+          <li><a href="#portfolio" class="navbar-link" data-nav-link>Portfolio</a></li>
+          <li><a href="#skills" class="navbar-link" data-nav-link>Skills</a></li>
+          <li><a href="#experience" class="navbar-link" data-nav-link>Experience</a></li>
+          <li><a href="#contact" class="navbar-link" data-nav-link>Contact</a></li>
         </ul>
-    </section>
+      </nav>
 
-    <section id="projects">
-        <h2>Projects</h2>
+      <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- #HOME -->
+  <section id="home" class="hero-banner">
+    <div class="container">
+      <h1>Hi, I'm Shaked Gofin</h1>
+      <p>An AI and Software Developer with experience in full-stack development and machine learning.</p>
+      <a href="#portfolio" class="btn">See My Work</a>
+    </div>
+  </section>
+
+  <!-- #PORTFOLIO -->
+  <section id="portfolio">
+    <div class="container">
+      <h2>My Projects</h2>
+
+      <div class="portfolio-item">
+        <h3>AI Chatbot for Healthcare</h3>
+        <p>Designed and developed an AI chatbot using LangChain, TypeScript, and Angular. Deployed with Docker to Google Cloud Run.</p>
+        <a href="https://github.com/Shaked-g/project1" class="btn">View Project</a>
+      </div>
+
+      <div class="portfolio-item">
+        <h3>ML-powered Image Recognition</h3>
+        <p>Integrated Google Vision API for automated tagging and classification, reducing server costs with optimized AWS usage.</p>
+        <a href="https://github.com/Shaked-g/project2" class="btn">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- #SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul>
+        <li>Languages: TypeScript, JavaScript, Python, Java, C, C++</li>
+        <li>Frameworks: Angular, Node.js, Express.js</li>
+        <li>Databases: MongoDB, MySQL, SQL</li>
+        <li>Cloud: AWS (S3, EC2, CloudFront), Google Cloud (Vision API, Firebase, GCP)</li>
+        <li>Machine Learning: TensorFlow, OpenCV, Scikit-learn</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- #EXPERIENCE -->
+  <section id="experience">
+    <div class="container">
+      <h2>Experience</h2>
+
+      <div class="job">
+        <h3>Google Startup Competition for the Israeli Ministry of Health</h3>
+        <p>Mar 2024 – Jun 2024</p>
         <ul>
-            <li><a href="https://github.com/Shaked-g/project1">AI Chatbot for Healthcare</a> - Built using LangChain, TypeScript, and Google Vertex AI</li>
-            <li><a href="https://github.com/Shaked-g/project2">ML-powered Image Recognition</a> - Integrated Google Vision API for automated tagging and classification</li>
+          <li>Developed AI chatbot using LangChain, TypeScript, and Node.js.</li>
+          <li>Implemented RAG architecture for data integration with Google Vertex AI Vector Search.</li>
         </ul>
-    </section>
+      </div>
 
-    <footer>
-        <p>&copy; 2024 Shaked Gofin</p>
-    </footer>
+      <div class="job">
+        <h3>Machine Learning Developer, Selectika</h3>
+        <p>Aug 2022 – May 2023</p>
+        <ul>
+          <li>Integrated Google Vision API and optimized AWS EC2 server usage.</li>
+          <li>Reorganized database structure based on machine learning insights.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3>Full Stack Developer, Selectika</h3>
+        <p>Oct 2021 – Aug 2022</p>
+        <ul>
+          <li>Developed REST API using Express.js, Node.js, and MongoDB for data retrieval.</li>
+          <li>Led feature development and deployment on AWS EC2 and S3 CloudFront.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- #CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>If you'd like to get in touch, feel free to reach out via email or find me on LinkedIn!</p>
+      <ul>
+        <li>Email: <a href="mailto:sgofin@gmail.com">sgofin@gmail.com</a></li>
+        <li>LinkedIn: <a href="https://linkedin.com/in/shaked-gofin">linkedin.com/in/shaked-gofin</a></li>
+        <li>GitHub: <a href="https://github.com/Shaked-g">github.com/Shaked-g</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Shaked Gofin</p>
+    </div>
+  </footer>
+
 </body>
+
 </html>
